@@ -31,3 +31,7 @@ src/
 1. Descargar el codigo de Github con la opción de descarga o hacer un fork del repositorio (a gusto). 
 2. `yarn` o `npm install` para instalar paquetes npm 
 3. `yarn start` o `npm start` para inicializar server de desarrollo
+
+## Resultado
+
+![image](https://user-images.githubusercontent.com/28366930/177874068-943e6f61-5416-47de-8371-be0b9ab4d161.png)

@@ -1,0 +1,19 @@
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  flex: 1;
+}
+
+.primary {
+  background: #06c991;
+  font-size: 18px;
+}
+
+.secondary {
+  background: #0e5c96;
+  font-size: 14px;
+  max-width: 150px;
+}

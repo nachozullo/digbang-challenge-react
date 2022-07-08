@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { PrimaryButton, SecondaryButton } from '../custom-button';
 import { SliderSelector } from '../slider-selector';
+import { formatNumberWithCommas } from '../../utils';
 
 import './index.css';
 
@@ -30,7 +31,11 @@ export const CreditSimulator = () => {
       />
       <div className='total-container'>
         <span className='fee-amount-label'>CUOTA FIJA POR MES</span>
-        <span className='fee-amount'>${Number(totalAmount / term).toFixed(2)}</span>
+        <span className='fee-amount'>
+          {totalAmount && term && term > 0
+            ? `$${formatNumberWithCommas(Number(totalAmount / term).toFixed(2))}`
+            : '-'}
+        </span>
       </div>
       <div className='button-container'>
         <PrimaryButton>OBTENÉ CRÉDITO</PrimaryButton>

@@ -1,5 +1,6 @@
 import Slider from 'rc-slider';
 import { CustomInput } from '../custom-input';
+import { formatNumberWithCommas } from '../../utils';
 
 import 'rc-slider/assets/index.css';
 import './index.css';
@@ -33,11 +34,11 @@ export const SliderSelector = ({ label, name, unit = '', minValue, maxValue, val
         marks={{
           [minValue]: {
             style: MARK_STYLE,
-            label: `${unit} ${minValue}`,
+            label: `${unit} ${formatNumberWithCommas(minValue)}`,
           },
           [maxValue]: {
             style: MARK_STYLE,
-            label: `${unit} ${maxValue}`,
+            label: `${unit} ${formatNumberWithCommas(maxValue)}`,
           },
         }}
       />
